@@ -3,7 +3,7 @@ import ExcelJS from 'exceljs';
 import { AppUser, AuditEntry, BackupEntry, Establishment, Fight, Permission, RankingEntry, RegisteredRooster, Role, TournamentData, TournamentSettings, TournamentSummary } from '../types';
 import { weightForExcel, weightFromExcel } from '../utils/weight';
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_URL?.trim() || '/api').replace(/\/+$/, '');
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const headers = new Headers(options?.headers);
@@ -597,7 +597,7 @@ async function adminRequest<T>(path: string, options?: RequestInit): Promise<T> 
   const headers = new Headers(options?.headers);
   const token = localStorage.getItem('gallos_simple_token');
   if (token) headers.set('Authorization', `Bearer ${token}`);
-  const response = await fetch(`/api${ADMIN_BASE}${path}`, { ...options, headers });
+  const response = await fetch(`${API_BASE}${ADMIN_BASE}${path}`, { ...options, headers });
   if (!response.ok) {
     const payload = await response.json().catch(() => null) as { error?: { message?: string } } | null;
     throw new Error(payload?.error?.message ?? 'No se pudo completar la operación.');

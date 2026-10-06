@@ -1,0 +1,3746 @@
+{
+  "coliseo": "COLISEO INTERNACIONAL COLOSO DE TRAPICHE",
+  "totalPeleas": 180,
+  "hojas": {
+    "Hoja1": [
+      {
+        "numero": 1,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 2,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 3,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 4,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 5,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 6,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 7,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 8,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 9,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 10,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 11,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 12,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 13,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 14,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 15,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 16,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 17,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 18,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 19,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 20,
+        "hoja": "Hoja1",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 2": [
+      {
+        "numero": 21,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 22,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 23,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 24,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 25,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 26,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 27,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 28,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 29,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 30,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 31,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 32,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 33,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 34,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 35,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 36,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 37,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 38,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 39,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 40,
+        "hoja": "Hoja 2",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 3": [
+      {
+        "numero": 41,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 42,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 43,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 44,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 45,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 46,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 47,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 48,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 49,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 50,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 51,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 52,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 53,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 54,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 55,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 56,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 57,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 58,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 59,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 60,
+        "hoja": "Hoja 3",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 4": [
+      {
+        "numero": 61,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 62,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 63,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 64,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 65,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 66,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 67,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 68,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 69,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 70,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 71,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 72,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 73,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 74,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 75,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 76,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 77,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 78,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 79,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 80,
+        "hoja": "Hoja 4",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 5": [
+      {
+        "numero": 81,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 82,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 83,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 84,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 85,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 86,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 87,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 88,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 89,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 90,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 91,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 92,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 93,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 94,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 95,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 96,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 97,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 98,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 99,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 100,
+        "hoja": "Hoja 5",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 6": [
+      {
+        "numero": 101,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 102,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 103,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 104,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 105,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 106,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 107,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 108,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 109,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 110,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 111,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 112,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 113,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 114,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 115,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 116,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 117,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 118,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 119,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 120,
+        "hoja": "Hoja 6",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 7": [
+      {
+        "numero": 121,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 122,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 123,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 124,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 125,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 126,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 127,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 128,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 129,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 130,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 131,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 132,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 133,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 134,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 135,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 136,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 137,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 138,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 139,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 140,
+        "hoja": "Hoja 7",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 8": [
+      {
+        "numero": 141,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 142,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 143,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 144,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 145,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 146,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 147,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 148,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 149,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 150,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 151,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 152,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 153,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 154,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 155,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 156,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 157,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 158,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 159,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 160,
+        "hoja": "Hoja 8",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ],
+    "Hoja 9": [
+      {
+        "numero": 161,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 162,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 163,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 164,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 165,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 166,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 167,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 168,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 169,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 170,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 171,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 172,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 173,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 174,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 175,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 176,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 177,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 178,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 179,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      },
+      {
+        "numero": 180,
+        "hoja": "Hoja 9",
+        "gallo1": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "gallo2": {
+          "galpon": "",
+          "color": "",
+          "peso": null,
+          "ficha": "",
+          "resultado": ""
+        },
+        "caja": null,
+        "tiempo": ""
+      }
+    ]
+  },
+  "pollones": [],
+  "frentes": [],
+  "premios": [
+    {
+      "id": 1,
+      "puesto": "1ER PUESTO",
+      "premio": 0,
+      "galpon": "",
+      "tiempo": "",
+      "firma": ""
+    },
+    {
+      "id": 2,
+      "puesto": "2DO PUESTO",
+      "premio": 0,
+      "galpon": "",
+      "tiempo": "",
+      "firma": ""
+    },
+    {
+      "id": 3,
+      "puesto": "3ER PUESTO",
+      "premio": 0,
+      "galpon": "",
+      "tiempo": "",
+      "firma": ""
+    },
+    {
+      "id": 4,
+      "puesto": "CAMPEÓN DE DESAFÍO",
+      "premio": 0,
+      "galpon": "",
+      "tiempo": "",
+      "firma": ""
+    }
+  ],
+  "galpones": [],
+  "gallos": [],
+  "configuracion": {
+    "nombreColiseo": "COLISEO INTERNACIONAL COLOSO DE TRAPICHE",
+    "nombreTorneo": "prueba 2",
+    "nombreSistema": "",
+    "logoBase64": "data:image/jpeg;base64,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",
+    "unidadPeso": "libras_onzas",
+    "rankingModo": "puntos",
+    "rankingFiltrarPorPeleas": false,
+    "rankingMinimosPeleas": 2,
+    "victoriasRequeridasTiempo": 2,
+    "permitirEmpatesTiempo": false,
+    "permitirDerrotasTiempo": false,
+    "usarTiempoReglamentarioEmpate": true,
+    "puntosPollon": 4,
+    "puntosVictoria": 3,
+    "puntosEmpate": 1,
+    "puntosDerrota": 0,
+    "duracionMaximaSegundos": 360,
+    "limiteTiempoActivo": true,
+    "diferenciaPesoMaximaOnzas": 2,
+    "pollonMaximoSegundos": 30,
+    "pollonCriterio": "30",
+    "pollonCantidadMejores": 10,
+    "pollonesActivos": true,
+    "premiosMontos": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "premiosCantidad": 4,
+    "pollonPremios": [
+      {
+        "maximoSegundos": 30,
+        "premio": 0
+      },
+      {
+        "maximoSegundos": 60,
+        "premio": 0
+      },
+      {
+        "maximoSegundos": 120,
+        "premio": 0
+      }
+    ]
+  },
+  "auditoria": [
+    {
+      "id": "af2d5639-1964-4d18-b1ae-ab5d63fb50b2",
+      "usuario": "admin",
+      "accion": "SELECCIONAR",
+      "entidad": "Torneo",
+      "entidadId": "3a9b14b3-eec2-448b-8f73-e8982597ded2",
+      "detalle": "prueba 2",
+      "fecha": "2026-10-06T01:15:18.748Z"
+    },
+    {
+      "id": "6b919825-3aa7-4b68-82ad-9b7623f1f50f",
+      "usuario": "admin",
+      "accion": "ACTUALIZAR",
+      "entidad": "Configuración",
+      "entidadId": "torneo",
+      "detalle": "Modo de ranking: puntos",
+      "fecha": "2026-10-06T01:14:24.609Z"
+    },
+    {
+      "id": "f54cf9ca-bbae-46b1-96d5-5d307875604d",
+      "usuario": "admin",
+      "accion": "ACTUALIZAR",
+      "entidad": "Configuración",
+      "entidadId": "torneo",
+      "detalle": "Modo de ranking: puntos",
+      "fecha": "2026-10-06T01:14:23.445Z"
+    },
+    {
+      "id": "974d6c6f-66c0-4bb8-9448-fb0250d0a3d5",
+      "usuario": "admin",
+      "accion": "CREAR",
+      "entidad": "Torneo",
+      "entidadId": "prueba 2",
+      "detalle": "Fecha 2026-10-06",
+      "fecha": "2026-10-06T01:05:22.527Z"
+    }
+  ]
+}

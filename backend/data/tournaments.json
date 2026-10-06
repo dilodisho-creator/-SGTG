@@ -1,0 +1,53 @@
+{
+  "activoId": "2104e5c5-ad85-4b02-a60f-9570b6486092",
+  "torneos": [
+    {
+      "id": "2104e5c5-ad85-4b02-a60f-9570b6486092",
+      "nombre": "DERBY GALLISTICO ORG GLP TAMBO GABRIEL",
+      "fecha": "2026-10-13",
+      "estado": "activo",
+      "creadoEn": "2026-10-03T21:08:44.082Z",
+      "actualizadoEn": "2026-10-06T01:18:46.820Z"
+    },
+    {
+      "id": "0f810bc9-ee50-4b7c-af1d-57cdfe92024f",
+      "nombre": "Torneo principal",
+      "fecha": "2026-10-05",
+      "estado": "activo",
+      "creadoEn": "2026-10-05T02:03:49.308Z",
+      "actualizadoEn": "2026-10-06T01:15:27.292Z"
+    },
+    {
+      "id": "68bca053-0fa3-4ba9-a2b4-8c3a97239c51",
+      "nombre": "diego gay",
+      "fecha": "2026-10-05",
+      "estado": "activo",
+      "creadoEn": "2026-10-05T02:04:20.479Z",
+      "actualizadoEn": "2026-10-05T02:05:27.241Z"
+    },
+    {
+      "id": "838f9ed6-35a4-41ab-a7e7-08bf04b628f9",
+      "nombre": "nashe",
+      "fecha": "2026-10-06",
+      "estado": "activo",
+      "creadoEn": "2026-10-05T02:05:52.387Z",
+      "actualizadoEn": "2026-10-05T02:07:33.367Z"
+    },
+    {
+      "id": "3a9b14b3-eec2-448b-8f73-e8982597ded2",
+      "nombre": "prueba 2",
+      "fecha": "2026-10-06",
+      "estado": "activo",
+      "creadoEn": "2026-10-06T01:05:22.522Z",
+      "actualizadoEn": "2026-10-06T01:15:18.751Z"
+    },
+    {
+      "id": "144b3c07-e25f-415e-a6af-667f49c76c30",
+      "nombre": "nashe",
+      "fecha": "2026-10-06",
+      "estado": "activo",
+      "creadoEn": "2026-10-06T01:15:11.083Z",
+      "actualizadoEn": "2026-10-06T01:15:11.090Z"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+import { Router } from 'express';
+import { tournamentController } from '../controllers/tournament.controller';
+
+export const tournamentRoutes = Router();
+
+tournamentRoutes.get('/tournament', tournamentController.get);
+tournamentRoutes.put('/fights/:number', tournamentController.updateFight);
+tournamentRoutes.post('/sync/pollones', tournamentController.syncPollones);
+tournamentRoutes.post('/sync/frentes', tournamentController.syncFrentes);
+tournamentRoutes.post('/sync/premios', tournamentController.syncPrizes);
+tournamentRoutes.put('/premios/:id', tournamentController.updatePrize);
+tournamentRoutes.post('/importar', tournamentController.importTournament);
+tournamentRoutes.post('/reset', tournamentController.reset);
+tournamentRoutes.post('/fights/reset', tournamentController.resetFights);
+tournamentRoutes.post('/galpones', tournamentController.createEstablishment);
+tournamentRoutes.put('/galpones/:id', tournamentController.updateEstablishment);
+tournamentRoutes.delete('/galpones/:id', tournamentController.deleteEstablishment);
+tournamentRoutes.post('/gallos', tournamentController.createRooster);
+tournamentRoutes.put('/gallos/:id', tournamentController.updateRooster);
+tournamentRoutes.delete('/gallos/:id', tournamentController.deleteRooster);
+tournamentRoutes.post('/fights/assign', tournamentController.assignFight);
+tournamentRoutes.post('/fights/draw', tournamentController.drawFights);
+tournamentRoutes.delete('/fights/:number', tournamentController.cancelFight);
+tournamentRoutes.get('/torneos', tournamentController.tournaments);
+tournamentRoutes.post('/torneos', tournamentController.createTournament);
+tournamentRoutes.post('/torneos/:id/seleccionar', tournamentController.selectTournament);
+tournamentRoutes.put('/torneos/:id', tournamentController.editTournament);
+tournamentRoutes.post('/torneos/:id/archivar', tournamentController.archiveTournament);
+tournamentRoutes.post('/torneos/:id/reactivar', tournamentController.reactivateTournament);
+tournamentRoutes.delete('/torneos/:id', tournamentController.deleteTournament);
+tournamentRoutes.get('/ranking', tournamentController.ranking);
+tournamentRoutes.get('/auditoria', tournamentController.audit);
+tournamentRoutes.put('/configuracion', tournamentController.settings);
+tournamentRoutes.get('/respaldos', tournamentController.backups);
+tournamentRoutes.post('/respaldos', tournamentController.createBackup);
+tournamentRoutes.post('/respaldos/:filename/restaurar', tournamentController.restoreBackup);
+tournamentRoutes.delete('/respaldos/:filename', tournamentController.deleteBackup);

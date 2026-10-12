@@ -1,7 +1,5 @@
-import { copyFile, mkdir, readFile, rename, unlink, writeFile } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
-import path from 'node:path';
-import { config } from '../config';
+import { pool } from '../db';
 import { Establishment, Fight, RegisteredRooster, TournamentData, TournamentSettings, TournamentSummary } from '../types';
 
 let writeQueue = Promise.resolve();
@@ -70,53 +68,77 @@ export function createEmptyTournament(): TournamentData {
   };
 }
 
-function tournamentFile(id: string): string {
-  return path.join(config.tournamentsDirectory, `${id}.json`);
-}
-
 async function readRegistry(): Promise<TournamentRegistry> {
-  await mkdir(config.tournamentsDirectory, { recursive: true });
-  try {
-    const registry = JSON.parse(await readFile(config.tournamentRegistryFile, 'utf8')) as TournamentRegistry;
-    if (registry.activoId && Array.isArray(registry.torneos) && registry.torneos.length) return registry;
-  } catch {
+  const result = await pool.query<{ value: TournamentRegistry }>(
+    `SELECT value FROM tournament_registry WHERE key = 'registry'`,
+  );
+
+  if (result.rows.length > 0) {
+    const registry = result.rows[0].value;
+    if (registry.activoId && Array.isArray(registry.torneos) && registry.torneos.length) {
+      return registry;
+    }
   }
-  await ensureDataFile();
+
   const id = randomUUID();
-  const data = JSON.parse(await readFile(config.dataFile, 'utf8')) as TournamentData;
+  const data = createEmptyTournament();
   const now = new Date().toISOString();
   const summary: TournamentSummary = {
     id,
-    nombre: data.configuracion?.nombreTorneo?.trim() || 'Torneo principal',
+    nombre: 'Torneo principal',
     fecha: now.slice(0, 10),
     estado: 'activo',
     creadoEn: now,
     actualizadoEn: now,
   };
-  await writeFile(tournamentFile(id), JSON.stringify(data, null, 2), 'utf8');
-  const registry = { activoId: id, torneos: [summary] };
-  await writeFile(config.tournamentRegistryFile, JSON.stringify(registry, null, 2), 'utf8');
+  const registry: TournamentRegistry = { activoId: id, torneos: [summary] };
+
+  await pool.query(
+    `INSERT INTO tournaments (id, data, created_at, updated_at)
+     VALUES ($1, $2::jsonb, NOW(), NOW())
+     ON CONFLICT (id) DO UPDATE SET data = EXCLUDED.data, updated_at = NOW()`,
+    [id, JSON.stringify(data)],
+  );
+  await pool.query(
+    `INSERT INTO tournament_registry (key, value, updated_at)
+     VALUES ('registry', $1::jsonb, NOW())
+     ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value, updated_at = NOW()`,
+    [JSON.stringify(registry)],
+  );
+
   return registry;
 }
 
 async function writeRegistry(registry: TournamentRegistry): Promise<void> {
-  const temporaryFile = `${config.tournamentRegistryFile}.tmp`;
-  await writeFile(temporaryFile, JSON.stringify(registry, null, 2), 'utf8');
-  await rename(temporaryFile, config.tournamentRegistryFile);
-}
-
-async function ensureDataFile(): Promise<void> {
-  await mkdir(path.dirname(config.dataFile), { recursive: true });
-  try {
-    await readFile(config.dataFile, 'utf8');
-  } catch {
-    await writeFile(config.dataFile, JSON.stringify(createEmptyTournament(), null, 2), 'utf8');
-  }
+  await pool.query(
+    `INSERT INTO tournament_registry (key, value, updated_at)
+     VALUES ('registry', $1::jsonb, NOW())
+     ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value, updated_at = NOW()`,
+    [JSON.stringify(registry)],
+  );
 }
 
 export async function readTournament(): Promise<TournamentData> {
   const registry = await readRegistry();
-  const data = JSON.parse(await readFile(tournamentFile(registry.activoId), 'utf8')) as TournamentData;
+
+  const result = await pool.query<{ data: TournamentData }>(
+    `SELECT data FROM tournaments WHERE id = $1`,
+    [registry.activoId],
+  );
+
+  let data: TournamentData;
+  if (!result.rows.length) {
+    data = createEmptyTournament();
+    await pool.query(
+      `INSERT INTO tournaments (id, data, created_at, updated_at)
+       VALUES ($1, $2::jsonb, NOW(), NOW())
+       ON CONFLICT (id) DO NOTHING`,
+      [registry.activoId, JSON.stringify(data)],
+    );
+  } else {
+    data = result.rows[0].data;
+  }
+
   const fights = Object.values(data.hojas).flat();
   if (!Array.isArray(data.galpones)) {
     const names = Array.from(new Set(fights.flatMap((fight) => [fight.gallo1.galpon, fight.gallo2.galpon]).filter(Boolean))).sort();
@@ -150,6 +172,7 @@ export async function readTournament(): Promise<TournamentData> {
       }
     }
   }
+
   const existingSettings = data.configuracion as Partial<TournamentSettings> | undefined;
   data.configuracion = {
     nombreColiseo: data.coliseo ?? '',
@@ -182,6 +205,7 @@ export async function readTournament(): Promise<TournamentData> {
       ? existingSettings.pollonPremios
       : [{ maximoSegundos: 30, premio: 0 }, { maximoSegundos: 60, premio: 0 }, { maximoSegundos: 120, premio: 0 }],
   };
+
   const activeSummary = registry.torneos.find((item) => item.id === registry.activoId);
   if (!data.configuracion.nombreTorneo.trim() && activeSummary) data.configuracion.nombreTorneo = activeSummary.nombre;
   if (!Array.isArray(data.auditoria)) data.auditoria = [];
@@ -191,10 +215,12 @@ export async function readTournament(): Promise<TournamentData> {
 export async function writeTournament(data: TournamentData): Promise<void> {
   const operation = async () => {
     const registry = await readRegistry();
-    const destination = tournamentFile(registry.activoId);
-    const temporaryFile = `${destination}.tmp`;
-    await writeFile(temporaryFile, JSON.stringify(data, null, 2), 'utf8');
-    await rename(temporaryFile, destination);
+    await pool.query(
+      `INSERT INTO tournaments (id, data, created_at, updated_at)
+       VALUES ($1, $2::jsonb, NOW(), NOW())
+       ON CONFLICT (id) DO UPDATE SET data = EXCLUDED.data, updated_at = NOW()`,
+      [registry.activoId, JSON.stringify(data)],
+    );
     const summary = registry.torneos.find((item) => item.id === registry.activoId);
     if (summary) {
       summary.nombre = data.configuracion.nombreTorneo.trim() || summary.nombre;
@@ -207,10 +233,7 @@ export async function writeTournament(data: TournamentData): Promise<void> {
 }
 
 export async function resetTournament(): Promise<TournamentData> {
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  await mkdir(config.backupDirectory, { recursive: true });
   const current = await readTournament();
-  await writeFile(path.join(config.backupDirectory, `simple-${timestamp}.json`), JSON.stringify(current, null, 2), 'utf8');
   const empty = createEmptyTournament();
   empty.configuracion.nombreColiseo = current.configuracion.nombreColiseo;
   empty.configuracion.nombreTorneo = current.configuracion.nombreTorneo;
@@ -233,7 +256,12 @@ export async function createTournament(nombre: string, fecha: string): Promise<T
   const current = await readTournament();
   data.configuracion.nombreColiseo = current.configuracion.nombreColiseo;
   data.coliseo = current.coliseo;
-  await writeFile(tournamentFile(id), JSON.stringify(data, null, 2), 'utf8');
+
+  await pool.query(
+    `INSERT INTO tournaments (id, data, created_at, updated_at)
+     VALUES ($1, $2::jsonb, NOW(), NOW())`,
+    [id, JSON.stringify(data)],
+  );
   registry.torneos.push({ id, nombre, fecha, estado: 'activo', creadoEn: now, actualizadoEn: now });
   registry.activoId = id;
   await writeRegistry(registry);
@@ -257,11 +285,14 @@ export async function updateTournamentSummary(id: string, nombre: string, fecha:
   summary.nombre = nombre;
   summary.fecha = fecha;
   summary.actualizadoEn = new Date().toISOString();
+
   if (id === registry.activoId) {
     const data = await readTournament();
     data.configuracion.nombreTorneo = nombre;
-    const destination = tournamentFile(id);
-    await writeFile(destination, JSON.stringify(data, null, 2), 'utf8');
+    await pool.query(
+      `UPDATE tournaments SET data = $1::jsonb, updated_at = NOW() WHERE id = $2`,
+      [JSON.stringify(data), id],
+    );
   }
   await writeRegistry(registry);
   return summary;
@@ -305,20 +336,10 @@ export async function deleteTournament(id: string): Promise<{ backupFilename: st
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '') || 'torneo';
 
-  await mkdir(config.backupDirectory, { recursive: true });
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const backupFilename = `respaldo-eliminado-${safeName}-${timestamp}.json`;
-  const backupPath = path.join(config.backupDirectory, backupFilename);
 
-  try {
-    await copyFile(tournamentFile(id), backupPath);
-  } catch {
-  }
-
-  try {
-    await unlink(tournamentFile(id));
-  } catch {
-  }
+  await pool.query(`DELETE FROM tournaments WHERE id = $1`, [id]);
 
   registry.torneos.splice(index, 1);
 

@@ -3,7 +3,14 @@ import ExcelJS from 'exceljs';
 import { AppUser, AuditEntry, BackupEntry, Establishment, Fight, Permission, RankingEntry, RegisteredRooster, Role, TournamentData, TournamentSettings, TournamentSummary } from '../types';
 import { weightForExcel, weightFromExcel } from '../utils/weight';
 
-const API_BASE = (import.meta.env.VITE_API_URL?.trim() || '/api').replace(/\/+$/, '');
+function getApiBase(): string {
+  const envUrl = import.meta.env.VITE_API_URL?.trim();
+  if (!envUrl) return '/api';
+  const clean = envUrl.replace(/\/+$/, '');
+  return clean.endsWith('/api') ? clean : `${clean}/api`;
+}
+
+const API_BASE = getApiBase();
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const headers = new Headers(options?.headers);

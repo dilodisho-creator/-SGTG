@@ -3,9 +3,17 @@ import path from 'node:path';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 
 function getDatabaseConfig(): PoolConfig {
-  if (process.env.DATABASE_URL) {
+  let connectionString = process.env.DATABASE_URL;
+
+  if (connectionString && connectionString.includes('db.ymwsmcailgatzmqnfkqh.supabase.co')) {
+    connectionString = connectionString
+      .replace('db.ymwsmcailgatzmqnfkqh.supabase.co', 'aws-0-us-east-1.pooler.supabase.com')
+      .replace('//postgres:', '//postgres.ymwsmcailgatzmqnfkqh:');
+  }
+
+  if (connectionString) {
     return {
-      connectionString: process.env.DATABASE_URL,
+      connectionString,
       ssl: { rejectUnauthorized: false },
       max: 10,
       idleTimeoutMillis: 30000,
@@ -13,10 +21,17 @@ function getDatabaseConfig(): PoolConfig {
     };
   }
 
-  const host = process.env.DB_HOST || process.env.PGHOST || 'db.ymwsmcailgatzmqnfkqh.supabase.co';
+  let host = process.env.DB_HOST || process.env.PGHOST || 'aws-0-us-east-1.pooler.supabase.com';
+  if (host.includes('db.ymwsmcailgatzmqnfkqh.supabase.co')) {
+    host = 'aws-0-us-east-1.pooler.supabase.com';
+  }
+
   const port = Number(process.env.DB_PORT || process.env.PGPORT || 5432);
   const database = process.env.DB_NAME || process.env.PGDATABASE || 'postgres';
-  const user = process.env.DB_USER || process.env.PGUSER || 'postgres';
+  let user = process.env.DB_USER || process.env.PGUSER || 'postgres.ymwsmcailgatzmqnfkqh';
+  if (user === 'postgres' && host.includes('pooler.supabase.com')) {
+    user = 'postgres.ymwsmcailgatzmqnfkqh';
+  }
   const password = process.env.DB_PASSWORD || process.env.PGPASSWORD || 'SGTG@123SGTG';
 
   return {

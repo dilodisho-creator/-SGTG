@@ -1,7 +1,5 @@
-import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
-import path from 'node:path';
 import { randomUUID } from 'node:crypto';
-import { config } from '../config';
+import { pool } from '../db';
 import { AppError } from '../errors';
 import { readTournament, writeTournament } from '../store/tournament.store';
 import { AuditEntry, RankingEntry, TournamentData, TournamentSettings } from '../types';
@@ -200,41 +198,89 @@ export async function getRanking(): Promise<RankingEntry[]> {
   return buildRanking(await readTournament());
 }
 
+interface BackupRow {
+  id: string;
+  filename: string;
+  data: TournamentData;
+  created_at: string;
+  size_bytes: number;
+}
+
 export async function listBackups() {
-  await mkdir(config.backupDirectory, { recursive: true });
-  const files = (await readdir(config.backupDirectory)).filter((file) => file.endsWith('.json'));
-  return Promise.all(files.map(async (filename) => {
-    const info = await stat(path.join(config.backupDirectory, filename));
-    return { filename, size: info.size, createdAt: info.mtime.toISOString() };
-  })).then((items) => items.sort((first, second) => second.createdAt.localeCompare(first.createdAt)));
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS backups (
+      id         TEXT PRIMARY KEY,
+      filename   TEXT NOT NULL,
+      data       JSONB NOT NULL,
+      size_bytes INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+    );
+  `);
+  const result = await pool.query<{ id: string; filename: string; size_bytes: number; created_at: string }>(
+    `SELECT id, filename, size_bytes, created_at FROM backups ORDER BY created_at DESC`,
+  );
+  return result.rows.map((row) => ({
+    filename: row.filename,
+    size: row.size_bytes,
+    createdAt: row.created_at,
+  }));
 }
 
 export async function createBackup() {
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS backups (
+      id         TEXT PRIMARY KEY,
+      filename   TEXT NOT NULL,
+      data       JSONB NOT NULL,
+      size_bytes INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+    );
+  `);
   const data = await readTournament();
   appendAudit(data, 'CREAR', 'Respaldo', 'manual', 'Respaldo manual creado');
   await writeTournament(data);
-  await mkdir(config.backupDirectory, { recursive: true });
+
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const filename = `respaldo-simple-${timestamp}.json`;
-  const destination = path.join(config.backupDirectory, filename);
-  await writeFile(destination, JSON.stringify(data, null, 2), 'utf8');
-  const info = await stat(destination);
-  return { filename, size: info.size, createdAt: info.mtime.toISOString() };
+  const id = randomUUID();
+  const json = JSON.stringify(data, null, 2);
+  const size = Buffer.byteLength(json, 'utf8');
+
+  await pool.query(
+    `INSERT INTO backups (id, filename, data, size_bytes, created_at) VALUES ($1, $2, $3::jsonb, $4, NOW())`,
+    [id, filename, json, size],
+  );
+
+  return { filename, size, createdAt: new Date().toISOString() };
 }
 
 export async function restoreBackup(filename: string): Promise<TournamentData> {
-  if (path.basename(filename) !== filename || !filename.endsWith('.json')) throw new AppError(400, 'INVALID_BACKUP', 'El respaldo seleccionado no es válido.');
-  const source = path.join(config.backupDirectory, filename);
-  let parsed: Partial<TournamentData>;
-  try {
-    parsed = JSON.parse(await readFile(source, 'utf8')) as Partial<TournamentData>;
-  } catch {
-    throw new AppError(400, 'INVALID_BACKUP', 'No se pudo leer el respaldo.');
+  if (!filename.endsWith('.json') || filename.includes('/') || filename.includes('..')) {
+    throw new AppError(400, 'INVALID_BACKUP', 'El respaldo seleccionado no es válido.');
   }
-  if (!parsed.hojas || typeof parsed.hojas !== 'object') throw new AppError(400, 'INVALID_BACKUP', 'El respaldo no contiene datos válidos.');
-  await mkdir(config.backupDirectory, { recursive: true });
-  const current = await readTournament();
-  await writeFile(path.join(config.backupDirectory, `antes-de-restaurar-${Date.now()}.json`), JSON.stringify(current, null, 2), 'utf8');
+
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS backups (
+      id         TEXT PRIMARY KEY,
+      filename   TEXT NOT NULL,
+      data       JSONB NOT NULL,
+      size_bytes INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+    );
+  `);
+
+  const result = await pool.query<BackupRow>(
+    `SELECT * FROM backups WHERE filename = $1 LIMIT 1`,
+    [filename],
+  );
+
+  if (!result.rows.length) throw new AppError(404, 'BACKUP_NOT_FOUND', 'El respaldo no existe.');
+
+  const parsed = result.rows[0].data as Partial<TournamentData>;
+  if (!parsed.hojas || typeof parsed.hojas !== 'object') {
+    throw new AppError(400, 'INVALID_BACKUP', 'El respaldo no contiene datos válidos.');
+  }
+
   const restored = parsed as TournamentData;
   appendAudit(restored, 'RESTAURAR', 'Respaldo', filename, 'Datos restaurados desde respaldo');
   await writeTournament(restored);
@@ -242,12 +288,26 @@ export async function restoreBackup(filename: string): Promise<TournamentData> {
 }
 
 export async function deleteBackup(filename: string): Promise<void> {
-  if (path.basename(filename) !== filename || !filename.endsWith('.json')) throw new AppError(400, 'INVALID_BACKUP', 'El respaldo seleccionado no es válido.');
-  const target = path.join(config.backupDirectory, filename);
-  try {
-    await stat(target);
-  } catch {
+  if (!filename.endsWith('.json') || filename.includes('/') || filename.includes('..')) {
+    throw new AppError(400, 'INVALID_BACKUP', 'El respaldo seleccionado no es válido.');
+  }
+
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS backups (
+      id         TEXT PRIMARY KEY,
+      filename   TEXT NOT NULL,
+      data       JSONB NOT NULL,
+      size_bytes INTEGER NOT NULL DEFAULT 0,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+    );
+  `);
+
+  const result = await pool.query(
+    `DELETE FROM backups WHERE filename = $1`,
+    [filename],
+  );
+
+  if ((result.rowCount ?? 0) === 0) {
     throw new AppError(404, 'BACKUP_NOT_FOUND', 'El respaldo no existe.');
   }
-  await rm(target);
 }

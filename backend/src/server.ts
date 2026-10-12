@@ -1,10 +1,11 @@
 import 'dotenv/config';
 import { app } from './app';
 import { config } from './config';
-import { getTournament } from './services/tournament.service';
+import { initDb } from './db';
 
 async function start(): Promise<void> {
-  await getTournament();
+  await initDb();
+
   app.listen(config.port, () => {
     console.log(`Sistema simple disponible en http://localhost:${config.port}`);
   });

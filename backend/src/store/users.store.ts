@@ -1,8 +1,5 @@
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
-import path from 'node:path';
 import { randomUUID, createHash } from 'node:crypto';
-import { config } from '../config';
+import { pool } from '../db';
 
 export type Permission =
   | 'usuarios.ver'
@@ -120,18 +117,15 @@ export function verifyPassword(password: string, hash: string): boolean {
   return hashPassword(password) === hash;
 }
 
-function usersFilePath(): string {
-  return path.resolve(path.dirname(config.dataFile), 'users.json');
-}
-
 let writeQueue = Promise.resolve();
 
 async function writeUsers(store: UsersStore): Promise<void> {
-  const file = usersFilePath();
-  const tmp = `${file}.tmp`;
-  await mkdir(path.dirname(file), { recursive: true });
-  await writeFile(tmp, JSON.stringify(store, null, 2), 'utf8');
-  await rename(tmp, file);
+  await pool.query(
+    `INSERT INTO users_store (key, value, updated_at)
+     VALUES ('store', $1::jsonb, NOW())
+     ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value, updated_at = NOW()`,
+    [JSON.stringify(store)],
+  );
 }
 
 function seedStore(): UsersStore {
@@ -154,14 +148,17 @@ function seedStore(): UsersStore {
 }
 
 export async function readUsersStore(): Promise<UsersStore> {
-  const file = usersFilePath();
-  if (!existsSync(file)) {
+  const result = await pool.query<{ value: UsersStore }>(
+    `SELECT value FROM users_store WHERE key = 'store'`,
+  );
+
+  if (!result.rows.length) {
     const store = seedStore();
     await writeUsers(store);
     return store;
   }
-  const raw = await readFile(file, 'utf8');
-  const parsed = JSON.parse(raw) as UsersStore;
+
+  const parsed = result.rows[0].value;
   for (const defaultRole of DEFAULT_ROLES) {
     if (!parsed.roles.find((r) => r.id === defaultRole.id)) {
       parsed.roles.unshift(defaultRole);

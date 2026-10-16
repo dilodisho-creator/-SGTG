@@ -32,7 +32,7 @@ function getDatabaseConfig(): PoolConfig {
   if (user === 'postgres' && host.includes('pooler.supabase.com')) {
     user = 'postgres.ymwsmcailgatzmqnfkqh';
   }
-  const password = process.env.DB_PASSWORD || process.env.PGPASSWORD || 'SGTG@123SGTG';
+  const password = process.env.DB_PASSWORD || process.env.PGPASSWORD;
 
   return {
     host,

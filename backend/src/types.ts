@@ -88,6 +88,7 @@ export interface TournamentSettings {
   pollonPremios: Array<{ maximoSegundos: number; premio: number }>;
   premiosMontos: number[];
   premiosCantidad: number;
+  activarAlCrear?: boolean;
 }
 
 export interface TournamentSummary {

@@ -63,6 +63,7 @@ export function createEmptyTournament(): TournamentData {
       pollonPremios: [{ maximoSegundos: 30, premio: 0 }, { maximoSegundos: 60, premio: 0 }, { maximoSegundos: 120, premio: 0 }],
       premiosMontos: [0, 0, 0, 0],
       premiosCantidad: 4,
+      activarAlCrear: false,
     },
     auditoria: [],
   };
@@ -247,7 +248,7 @@ export async function listTournaments(): Promise<{ activoId: string; torneos: To
   return readRegistry();
 }
 
-export async function createTournament(nombre: string, fecha: string): Promise<TournamentData> {
+export async function createTournament(nombre: string, fecha: string, activar?: boolean): Promise<TournamentData> {
   const registry = await readRegistry();
   const id = randomUUID();
   const now = new Date().toISOString();
@@ -256,14 +257,18 @@ export async function createTournament(nombre: string, fecha: string): Promise<T
   const current = await readTournament();
   data.configuracion.nombreColiseo = current.configuracion.nombreColiseo;
   data.coliseo = current.coliseo;
+  data.configuracion.activarAlCrear = current.configuracion.activarAlCrear ?? false;
 
   await pool.query(
     `INSERT INTO tournaments (id, data, created_at, updated_at)
      VALUES ($1, $2::jsonb, NOW(), NOW())`,
     [id, JSON.stringify(data)],
   );
-  registry.torneos.push({ id, nombre, fecha, estado: 'activo', creadoEn: now, actualizadoEn: now });
-  registry.activoId = id;
+  registry.torneos.unshift({ id, nombre, fecha, estado: 'activo', creadoEn: now, actualizadoEn: now });
+  const shouldActivate = activar !== undefined ? activar : (current.configuracion.activarAlCrear ?? false);
+  if (shouldActivate) {
+    registry.activoId = id;
+  }
   await writeRegistry(registry);
   return readTournament();
 }

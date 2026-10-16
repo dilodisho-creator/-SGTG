@@ -276,7 +276,15 @@ function App() {
           activeId={tournaments.activoId}
           tournaments={tournaments.torneos}
           onClose={() => setShowTournaments(false)}
-          onCreate={async (nombre, fecha) => { setData(await createTournament({ nombre, fecha })); setTournaments(await getTournaments()); setActiveTab('registro'); }}
+          onCreate={async (nombre, fecha) => {
+            const shouldActivate = data?.configuracion.activarAlCrear === true;
+            const updatedData = await createTournament({ nombre, fecha, activar: shouldActivate });
+            setData(updatedData);
+            setTournaments(await getTournaments());
+            if (shouldActivate) {
+              setActiveTab('registro');
+            }
+          }}
           onSelect={async (id) => { setData(await selectTournament(id)); setTournaments(await getTournaments()); setShowTournaments(false); setActiveTab('registro'); }}
           onEdit={async (id, nombre, fecha) => { await editTournament(id, { nombre, fecha }); await loadData(); }}
           onArchive={async (id) => { setData(await archiveTournament(id)); setTournaments(await getTournaments()); }}

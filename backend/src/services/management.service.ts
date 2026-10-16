@@ -69,6 +69,7 @@ export async function updateSettings(body: unknown): Promise<TournamentSettings>
     }).sort((a, b) => a.maximoSegundos - b.maximoSegundos) : data.configuracion.pollonPremios,
     premiosMontos: Array.isArray(source.premiosMontos) ? source.premiosMontos.map((value) => Math.max(0, Number(value) || 0)).slice(0, data.premios.length) : data.configuracion.premiosMontos,
     premiosCantidad: Math.min(data.premios.length, Math.max(1, Math.floor(numeric('premiosCantidad', 1)))),
+    activarAlCrear: source.activarAlCrear === true,
   };
 
   data.coliseo = data.configuracion.nombreColiseo;

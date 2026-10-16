@@ -8,7 +8,7 @@ import {
   Download,
   History,
   Search,
-  Settings2,
+  Settings,
   Swords,
   Trophy,
 } from '../../animated-icons';
@@ -125,7 +125,7 @@ export function Sidebar({ currentTab, onSelectTab, fightsCount, torneo, onManage
     id: 'configuracion',
     label: 'Configuración',
     subtitle: 'Puntos, tiempos y ranking',
-    icon: Settings2,
+    icon: Settings,
     badge: '',
   };
   const usuarios: NavItem = {

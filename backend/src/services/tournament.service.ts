@@ -445,7 +445,8 @@ export async function createTournament(body: unknown): Promise<TournamentData> {
   const source = body as Record<string, unknown>;
   const nombre = requiredText(source.nombre, 'El nombre del torneo', 100);
   const fecha = typeof source.fecha === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(source.fecha) ? source.fecha : new Date().toISOString().slice(0, 10);
-  const data = await createStoredTournament(nombre, fecha);
+  const activar = typeof source.activar === 'boolean' ? source.activar : undefined;
+  const data = await createStoredTournament(nombre, fecha, activar);
   appendAudit(data, 'CREAR', 'Torneo', nombre, `Fecha ${fecha}`);
   await writeTournament(data);
   return data;

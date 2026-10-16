@@ -126,6 +126,7 @@ export const RotateCcw = createMotionIcon(LM.RotateCcw);
 export const Save = createMotionIcon(LM.Save);
 export const Scale = createMotionIcon(LM.Scale);
 export const Search = createMotionIcon(LM.Search);
+export const Settings = createMotionIcon(LM.Settings);
 export const Settings2 = createMotionIcon(LM.Settings2);
 export const ShieldAlert = createMotionIcon(LM.ShieldAlert);
 export const ShieldCheck = createMotionIcon(LM.ShieldCheck);

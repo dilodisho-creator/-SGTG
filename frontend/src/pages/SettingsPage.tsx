@@ -86,6 +86,57 @@ export function SettingsPage({ data, onDataChange }: { data: TournamentData | nu
               <div className={`grid sm:grid-cols-[1fr_auto_auto] gap-3 items-end ${!form.limiteTiempoActivo ? 'opacity-50 pointer-events-none' : ''}`}><label className="text-xs font-bold text-slate-600 dark:text-slate-300">Duración máxima, segundos<input type="number" min="1" value={form.duracionMaximaSegundos} onChange={(event) => setForm({ ...form, duracionMaximaSegundos: Number(event.target.value) })} className={inputClass} /></label><button type="button" onClick={() => setForm({ ...form, duracionMaximaSegundos: 360 })} className="rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2.5 text-sm font-bold">6 minutos</button><button type="button" onClick={() => setForm({ ...form, duracionMaximaSegundos: 480 })} className="rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2.5 text-sm font-bold">8 minutos</button></div>
               <label className="mt-4 flex items-center justify-between rounded-xl border border-slate-200 dark:border-slate-700 p-3 text-sm font-bold text-slate-700 dark:text-slate-200"><span>Usar el tiempo completo en tablas</span><input type="checkbox" disabled={!form.limiteTiempoActivo} checked={form.usarTiempoReglamentarioEmpate} onChange={(event) => setForm({ ...form, usarTiempoReglamentarioEmpate: event.target.checked })} className="w-4 h-4 accent-orange-500" /></label>
             </section>
+
+            <section className={cardClass}>
+              <div className="flex items-center gap-3 mb-1">
+                <Trophy className="w-5 h-5 text-brand-500" />
+                <div>
+                  <h2 className="font-extrabold text-slate-900 dark:text-white">Creación de torneos</h2>
+                  <p className="text-xs text-slate-500">Comportamiento al registrar un nuevo torneo en el sistema</p>
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-3 mt-4">
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, activarAlCrear: true })}
+                  className={`rounded-xl border p-4 text-left transition-all ${
+                    form.activarAlCrear !== false
+                      ? 'border-brand-500 bg-brand-500/10 text-brand-700 dark:text-brand-300 shadow-xs'
+                      : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-sm">Activar nuevo torneo</span>
+                    <span className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${form.activarAlCrear !== false ? 'border-brand-500 bg-brand-500' : 'border-slate-300 dark:border-slate-600'}`}>
+                      {form.activarAlCrear !== false && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
+                    </span>
+                  </div>
+                  <p className="text-xs opacity-75 mt-1.5">
+                    Al crear un torneo, se selecciona de inmediato como el torneo en uso activo.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, activarAlCrear: false })}
+                  className={`rounded-xl border p-4 text-left transition-all ${
+                    form.activarAlCrear === false
+                      ? 'border-brand-500 bg-brand-500/10 text-brand-700 dark:text-brand-300 shadow-xs'
+                      : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-sm">Mantener torneo actual</span>
+                    <span className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${form.activarAlCrear === false ? 'border-brand-500 bg-brand-500' : 'border-slate-300 dark:border-slate-600'}`}>
+                      {form.activarAlCrear === false && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
+                    </span>
+                  </div>
+                  <p className="text-xs opacity-75 mt-1.5">
+                    El nuevo torneo se crea en la lista pero se mantiene en uso el torneo actual.
+                  </p>
+                </button>
+              </div>
+            </section>
           </>}
 
           {section === 'pesos' && <section className={cardClass}>

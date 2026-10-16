@@ -546,7 +546,7 @@ export function getTournaments(): Promise<{ activoId: string; torneos: Tournamen
   return request('/torneos');
 }
 
-export function createTournament(data: { nombre: string; fecha: string }): Promise<TournamentData> {
+export function createTournament(data: { nombre: string; fecha: string; activar?: boolean }): Promise<TournamentData> {
   return request('/torneos', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
 }
 
